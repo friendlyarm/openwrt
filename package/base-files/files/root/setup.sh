@@ -129,7 +129,8 @@ if [ -d /www/luci-static/argon ]; then
     # set theme
     uci set luci.main.mediaurlbase='/luci-static/argon'
     uci set luci.themes.Argon='/luci-static/argon'
-    uci commit
 fi
+
+uci commit
 
 logger "done"
